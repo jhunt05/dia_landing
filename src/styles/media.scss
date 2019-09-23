@@ -84,6 +84,28 @@
     margin-left: 40px;
   }
 
+  .process {
+    &__point-items {
+      margin-bottom: -400px;
+    }
+
+    &__point-item1 {
+      top: -290px;
+    }
+
+    &__point-item2 {
+      top: -380px;
+    }
+
+    &__point-item3 {
+      top: -250px;
+    }
+
+    &__point-item4 {
+      top: -360px;
+    }
+  }
+
   .testimonials {
     margin-left: 30px;
 

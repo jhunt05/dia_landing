@@ -1042,6 +1042,22 @@ body {
     margin-left: 40px;
   }
 
+  .process__point-items {
+    margin-bottom: -400px;
+  }
+  .process__point-item1 {
+    top: -290px;
+  }
+  .process__point-item2 {
+    top: -380px;
+  }
+  .process__point-item3 {
+    top: -250px;
+  }
+  .process__point-item4 {
+    top: -360px;
+  }
+
   .testimonials {
     margin-left: 30px;
   }
