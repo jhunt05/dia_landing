@@ -1,5 +1,4 @@
-@import "reset";
-
+@import 'reset';
 
 @mixin slider-button {
   width: 81px;
@@ -50,10 +49,10 @@
 
 @mixin headline {
   font-weight: 900;
-  font-size: 32px;
+  font-size: 25px;
   line-height: 140%;
   color: $text-color;
-  width: 362px;
+  width: 270px;
 }
 
 @mixin testimonial-rectangle {
@@ -100,111 +99,108 @@ $text-color: #253757;
 
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   overflow: hidden;
 }
 
 .header {
-  display: flex;
-  flex-direction: column;
-  padding-left: 227px;
-  position: relative;
-  z-index: 0;
   background: $main-color;
-  height: 848px;
+  position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 68%;
-    height: 1215px;
-    left: 86.2%;
-    transform: rotate(-65.1deg);
-    background-color: #fff;
-    z-index: -1;
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
   }
 
-  &__nav {
-    display: flex
+  &__logo-img {
+    margin: 30px 0 0 40px;
   }
+}
 
-  &__logo {
-    width: 53px;
-    height: 32px;
-    padding-top: 48px;
+.menu__icon {
+  display: inline-block;
+  width: 45px;
+  margin: 23px 40px 0 0;
+  cursor: pointer;
+
+  & img {
+    width: 100%;
+    height: 100%;
   }
 }
 
 .menu {
-  max-width: 50%;
-  display: flex;
-  padding: 51px 0 0 143px;
-
-  &__link {
-    padding-right: 63px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    white-space: nowrap;
-
-    &:hover {
-      color: #ebfaff;
-    }
+  &__links {
+    display: none;
   }
 
-  &__link_active {
-    padding: 0 0 0 72px;
-    position: relative;
+  &__links-show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
 
-    &::after {
-      content: "";
-      width: 66px;
-      height: 4px;
-      position: absolute;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #FCC304;
-      border-radius: 32px;
-      left: 67px;
-      top: 24px;
+  &__link {
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
+    &:focus {
+      border-bottom: 2px solid #FCC304;
+    }
+
+    &:hover {
+      color: #FCC304;
     }
   }
 }
 
+.header__section {
+  background: $main-color;
+}
+
 .greet {
-  margin-top: 70px;
-  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__heading {
-    font-size: 64px;
+    font-size: 40px;
     font-weight: 900;
     line-height: 150%;
     color: #fff;
-    margin-bottom: 10px;
+    margin: 40px 0 20px;
+    text-align: center;
   } 
 
   &__text {
     color: #fff;
-    width: 755px;
+    width: 300px;
+    display: block;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 150%;
+    text-align: center;
   }
 
   &__btn {
     background: #fff;
     border-radius: 64px;
-    width: 226px;
-    height: 56px;
+    width: 180px;
+    height: 50px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 13px;
     letter-spacing: 1px;
     color:  #253757;
-    margin-top: 22px;
     cursor: pointer;
     border: none;
     outline: none;
+    margin: 22px 0;
+
+    &:focus {
+      transform: scale(1.1);
+    }
 
     &:hover {
       color: $main-color;
@@ -212,93 +208,22 @@ $text-color: #253757;
   }
 }
 
-.slider {
-  margin: -320px 220px;
-  display: flex;
-  position: relative;
-
-  &__photo {
-    width: 1146px;
-    height: 640px;
-    position: relative;
-  }
-
-  &__intro {
-    position: absolute;
-    bottom: 85px;
-    left: 98px;
-  }
-
-  &__intro-heading {
-    display: block;
-    color: $main-color;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding-bottom: 4px;
-  }
-
-  &__intro-text {
-    display: block;
-    font-size: 20px;
-    font-weight: 900;
-    line-height: 140%;
-    color: #fff;
-    width: 264px;
-  }
-
-  &__btn-1 {
-    @include slider-button();
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    top: 287px;
-    left: -81px;
-  }
-
-  &__btn-2 {
-    @include slider-button();
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    top: 287px;
-  }
-
-  &__social-links {
-    display: flex;
-    justify-content: space-around;
-    height: 64px;
-    width: 492px;
-    transform: rotate(90deg);
-    position: absolute;
-    right: -23%;
-    top: 300px;
-  }
-
-  &__link {
-    font-size: 13px;
-    font-weight: 800;
-    line-height: 150%;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $text-color;
-
-    &:hover {
-      color: $main-color;
-    }
-  }
+.slider-section {
+  display: none;
 }
 
 .welcome-section {
-  background: #FCFCFD;
-  margin-top: 370px;
+  margin-top: 50px;
 }
 
 .welcome {
-  padding: 165px 435px 135px 423px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__head {
     display: flex;
+    justify-content: flex-start;
   }
 
   &__logo {
@@ -310,84 +235,84 @@ $text-color: #253757;
   }
 
   &__text {
-    font-size: 24px;
+    font-size: 19px;
     line-height: 150%;
     font-weight: 400;
     color: $text-color;
-    max-width: 742px;
+    width: 250px;
+    margin-top: 20px;
   }
 }
 
 .service-section {
-  height: 705px;
   position: relative;
+  margin-top: 70px;
 }
 
 .section__head {
   margin: 0;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 100%;
   font-weight: 900;
   color: $text-color;
-  position: absolute;
-  top: -24px;
-  right: 40%;
-  left: 40%;
-  width: max-content;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .service {
   display: flex;
-  justify-content: space-around;
-  padding: 136px 200px 162px;
+  flex-direction: column;
 
-  &__item {
+  &__item,
+  &__item3 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
   }
 
   &__photo {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    margin-bottom: 64px;
+    margin-bottom: 30px;
   }
 
   &__heading {
     display: block;
-    width: 264px;
+    width: 250px;
     font-weight: 900;
     line-height: 140%;
     font-size: 20px;
     color: $text-color;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+    text-align: center;
   }
 
   &__description {
-    width: 264px;
+    width: 250px;
     font-size: 16px;
     font-weight: 300;
     line-height: 150%;
     color: #334563;
     margin: 0;
-  }
-
-  &__item3 {
-    display: flex;
-    flex-direction: column;
+    text-align: center;
   }
 }
 
-.process-section {
-  width: 100%;
-  background: #FCFCFD;
-  margin: 0 auto; 
+.process-section { 
   position: relative;
+  margin-top: 50px;
 }
 
 .process {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   &__head {
     display: flex;
+    margin-bottom: 10px;
   }
 
   .process__logo {
@@ -399,13 +324,12 @@ $text-color: #253757;
   }
 
   &__caption {
-    width: 365px;
-    padding: 160px 187px 20px;
+    width: 250px;
   }
 
   &__headline {
     font-weight: 900;
-    font-size: 32px;
+    font-size: 23px;
     line-height: 140%;
     color: $text-color;
     padding-bottom: 37px;
@@ -420,17 +344,15 @@ $text-color: #253757;
   }
 
   &__point-items {
+    margin-top: 40px;
     display: grid; 
-    grid-template-columns: repeat(2, 240px);
-    grid-gap: 58px;
-    justify-content: end;
-    margin: 0 286px -50px 0;
+    grid-template-columns: 1, 240px;
+    grid-gap: 20px;
   }
 
   &__point-item1 {
     @include point-item();
     position: relative;
-    top: 60px;
   }
 
   &__point-number1 {
@@ -443,7 +365,6 @@ $text-color: #253757;
   &__point-item2 {
     @include point-item();
     position: relative;
-    top: -50px;
   }
 
   &__point-number2 {
@@ -456,8 +377,6 @@ $text-color: #253757;
   &__point-item3 {
     @include point-item();
     position: relative;
-    z-index: 1;
-    top: 120px;
   }
 
   &__point-number3 {
@@ -496,21 +415,22 @@ $text-color: #253757;
     position: absolute;
     top: 128px;
   }
-}
+} 
 
 .features-section {
   background: $main-color;
   position: relative;
   overflow: hidden;
-  height: 976px;
+  margin-top: 50px;
 }
 
 .features {
-  padding: 199px 300px 160px 227px;
   position: relative;
   
   &__head {
     display: flex;
+    margin: 50px 0 10px;
+    justify-content: center;
   }
 
   &__logo {
@@ -524,12 +444,17 @@ $text-color: #253757;
 
   &__headline {
     @include headline();
+    display: block;
+    margin: 0 auto;
+    text-align: center;
   }
 
   &__main {
     display: flex;
-    margin: 69px auto 64px;
+    flex-direction: column;
+    margin: 69px 0 64px;
     align-items: center;
+    text-align: center;
   }
 
   &__section-logo {
@@ -538,21 +463,11 @@ $text-color: #253757;
     background: #fff;
     border-radius: 50%;
     position: relative;
-    margin-right: 32px;
+    margin-bottom: 15px;
   }
 
-  &__main-logo1 {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-
-  &__main-logo2 {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-
+  &__main-logo1,
+  &__main-logo2,
   &__main-logo3 {
     position: absolute;
     top: 20px;
@@ -569,25 +484,18 @@ $text-color: #253757;
   }
 
   &__photo {
-    width: 1048px;
-    height: 976px;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    right: -40px;
-    box-sizing: border-box;
+    display: none;
   }
 }
 
 .testimonials-section {
-  min-height: 848px;
+  margin-top: 50px;
 }
 
 .testimonials {
-  padding: 166px 227px;
-
   &__head {
     display: flex;
+    justify-content: center;
   }
 
   &__logo {
@@ -600,16 +508,20 @@ $text-color: #253757;
 
   &__headline {
     @include headline();
-    margin-bottom: 86px;
+    margin: 10px auto 86px;
+    display: block;
+    text-align: center;
   }
 
   &__cards {
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__card {
-    width: 314px;
-    height: 464px;
+    width: 280px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -617,7 +529,6 @@ $text-color: #253757;
     box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.05);
     text-align: center;
     align-items: center;
-    margin-right: 78px;
     transition: transform 1s;
 
     &:hover {
@@ -711,6 +622,7 @@ $text-color: #253757;
 }
 
 .info-section {
+  margin-top: 70px;
   position: relative;
 }
 
@@ -718,27 +630,28 @@ $text-color: #253757;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 500px;
-  padding: 0 auto;
 
   &__head {
     font-weight: 900;
-    font-size: 48px;
+    font-size: 30px;
     line-height: 100%;
     color: $text-color;
+    text-align: center;
+    margin-bottom: 30px;
   }
 
   &__text {
-    width: 755px;
-    font-size: 24px;
+    width: 250px;
+    font-size: 19px;
     font-weight: 500;
     color: #334563;
     text-align: center;
+    margin-bottom: 15px;
   }
 
   &__btn {
-    width: 226px;
-    height: 56px;
+    width: 180px;
+    height: 50px;
     border-radius: 64px;
     border: none;
     background: #2F80ED;
@@ -751,6 +664,10 @@ $text-color: #253757;
     border: none;
     outline: none;
 
+    &:focus {
+      transform: scale(1.1);
+    }
+
     &:hover {
       border: 1px solid #2F80ED;
       background: #fff;
@@ -758,103 +675,39 @@ $text-color: #253757;
     }
   }
 
-  &__clip1 {
-    position: absolute;
-    height: 40px;
-    left: 446px;
-    top: -40px;
-  }
-
-  &__clip2 {
-    position: absolute;
-    height: 40px;
-    left: 481px;
-    bottom: 160px;
-  }
-
-  &__clip3 {
-    position: absolute;
-    left: 131.42px;
-    bottom: 40px;
-  }
-
-  &__clip4 {
-    position: absolute;
-    height: 40px;
-    left: 1012px;
-    bottom: 120px;
-  }
-
-  &__clip5 {
-    position: absolute;
-    height: 44px;
-    left: 1447.02px;
-    top: -20px; 
-  }
-
-  &__clip6 {
-    position: absolute;
-    height: 50px;
-    left: 82.16px;
-    bottom: 240px;
-  }
-
-  &__clip7 {
-    position: absolute;
-    height: 120px;
-    left: 1337px;
-    bottom: 80px;
-  }
-
-  &__clip8 {
-    position: absolute;
-    left: 233px;
-    top: -40px;
-  }
-
-  &__clip9 {
-    position: absolute;
-    left: 1218.98px;
-    bottom: 160px;
-  }
-
-  &__clip10 {
-    position: absolute;
-    left: 269px;
-    bottom: 200px;
-  }
-
-  &__clip11 {
-    position: absolute;
-    left: 1272.91px;
-    top: 10px;
-  }
-
+  &__clip1,
+  &__clip2,
+  &__clip3,
+  &__clip4,
+  &__clip5,
+  &__clip6,
+  &__clip7,
+  &__clip8,
+  &__clip9,
+  &__clip10,
+  &__clip11,
   &__clip12 {
-    position: absolute;
-    left: 1465.59px;
-    top: 160px;
+    display: none;
   }
 }
 
 .message-section {
-  margin-top: 100px;
-  padding: 0 227px;
+  margin-top: 80px;
 }
 
 .message-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .message {
   display: flex;
   flex-direction: column;
-  margin-right: 128px;
 
   &__head {
     display: flex;
-    margin-bottom: 105px;
+    margin-bottom: 70px;
+    justify-content: center;
   }
 
   &__logo {
@@ -868,11 +721,12 @@ $text-color: #253757;
   &__form {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   &__inputs {
     height: 40px;
-    width: 656px;
+    width: 250px;
     border: none;
     border-bottom: 1px solid #E1E1E1;
     margin-bottom: 48px;
@@ -880,20 +734,26 @@ $text-color: #253757;
     font-size: 14px;
     line-height: 150%;
     font-weight: bold;
-    outline: none;
+
+    &:focus {
+      border-bottom: 2px solid $main-color;
+    }
   }
 
   &__btn {
-    margin-top: 57px;
-    width: 226px;
-    height: 56px;
+    margin-top: 5px;
+    width: 180px;
+    height: 50px;
     background: #2F80ED;
     border-radius: 64px;
     color: #fff;
     font-weight: 500;
     font-size: 16px;
     border: none;
-    outline: none;
+
+    &:focus {
+      transform: scale(1.1);
+    }
 
     &:hover {
       border: 1px solid #2F80ED;
@@ -906,6 +766,8 @@ $text-color: #253757;
 .contacts {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
 
   &__head {
     display: flex;
@@ -921,6 +783,9 @@ $text-color: #253757;
 
   &__text {
     @include headline();
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
   }
 
   &__small-head {
@@ -933,13 +798,14 @@ $text-color: #253757;
   }
 
   &__items {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 900;
     line-height: 150%;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: $main-color;
     margin-bottom: 41px;
+    text-align: center;
   }
 
   &__social-links {
@@ -948,42 +814,53 @@ $text-color: #253757;
   }
 
   &__link {
-    padding-right: 48px;
+    margin-right: 20px;
     transition: transform 0.5s;
 
     &:hover {
       transform: scale(1.1);
     }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 .footer {
-  margin-top: 136px; 
+  margin-top: 50px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__item {
     font-size: 16px;
     line-height: 150%;
     color: $text-color;
     font-weight: 600;
-    padding-left: 227px;
-    padding-bottom: 83px; 
-    width: 460px;
+    width: max-content;
     white-space: nowrap;
+    margin-bottom: 40px;
   }
 
   &__nav {
     display: flex;
-    padding-left: 127px; 
+    flex-direction: column;
   }
 
   &__link {
-    padding-right: 63px;
     text-decoration: none;
     font-size: 16px;
     color: $text-color;
     font-weight: 600;
     white-space: nowrap;
+    margin-bottom: 5px;
+    font-variant: small-caps;
+    text-align: center;
+
+    &:focus {
+      border-bottom: 2px solid $main-color;
+    }
 
     &:hover {
       color: $main-color;
@@ -991,4 +868,4 @@ $text-color: #253757;
   }
 }
 
-@import "media";
+@import 'media';

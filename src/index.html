@@ -1,55 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dia</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,800,900&display=swap" rel="stylesheet"></head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dia</title>
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="./script.js" defer></script>
+</head>
 <body>
-  <div class="container"> 
+  <div class="container">
     <div class="header-container">
-    <header class="header">
-      <div class="header__nav">
-        <a href="#" class="header__logo">
-          <img class="header__logo-img" src="./images/Dia.png">
-        </a>
-        <nav class="menu">
-          <a href="#" class="menu__link">Home</a>
-          <a href="#" class="menu__link">Services</a>
-          <a href="#" class="menu__link">About us</a>
-          <a href="#" class="menu__link">Work</a>
-          <a href="#" class="menu__link">Contact us</a>
-          <a href="#" class="menu__link menu__link_active">Hire us</a>
+      <header class="header">
+        <div class="header__navigation">
+          <a href="#" class="header__logo-link">
+            <img class="header__logo-img" src="./images/Dia.png">
+          </a>
+          <div class="menu__icon" onclick='openMenu()'>
+            <img src="./images/menu.png">
+          </div> 
+        </div>
+        <nav class="menu"> 
+          <div class="menu__links">
+            <a href="#" class="menu__link">Home</a>
+            <a href="#" class="menu__link">Services</a>
+            <a href="#" class="menu__link">About us</a>
+            <a href="#" class="menu__link">Work</a>
+            <a href="#" class="menu__link">Contact us</a>
+            <a href="#" class="menu__link">Hire us</a>
+          </div>
         </nav>
-      </div>
-      <section class="header__section">
-        <div class="greet">
-          <h1 class="greet__heading">Global digital agency</h1>
-          <p class="greet__text">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath.</p>
-          <button class="greet__btn">Learn more</button>
+      
+
+        <section class="header__section">
+          <div class="greet">
+            <h1 class="greet__heading">Global digital agency</h1>
+            <p class="greet__text">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath</p>
+            <button class="greet__btn">Learn more</button>
+          </div>
+        </section>
+      </header>
+
+      <section class="slider-section">
+        <div class="slider">
+          <div class="slider__photo">
+            <img class="slide showed" src="./images/slider-photo/photo.jpeg" alt="">
+            <img class="slide" src="./images/slider-photo/photo-2.jpg" alt="">
+            <img class="slide" src="./images/slider-photo/photo-3.jpg" alt="">
+          </div>
+          <button class="slider__btn slider__btn-1" onclick="previousPhoto()"><img src="./images/Vector-left.png"></button>
+          <button class="slider__btn slider__btn-2" onclick="nextPhoto()"><img src="./images/Vector.png"></button>
+          <div class="slider__intro">
+            <span class="slider__intro-heading">Intro</span>
+            <span class="slider__intro-text">By the same illusion which lifts the horizon</span>
+          </div>
+          <div class="slider__social-links">
+            <a class="slider__link" href="#">Facebook</a>
+            <a class="slider__link" href="#">Twitter</a>
+            <a class="slider__link" href="#">Instagram</a>
+          </div>
         </div>
       </section>
-    </header>
-    <section class="slider-section">
-      <div class="slider">
-        <img src="./images/photo.jpeg" alt="" class="slider__photo">
-        <button class="slider__btn slider__btn-1"><img src="./images/Vector-left.png"></button>
-        <button class="slider__btn slider__btn-2"><img src="./images/Vector.png"></button>
-        <div class="slider__intro">
-          <span class="slider__intro-heading">Intro</span>
-          <span class="slider__intro-text">By the same illusion which lifts the horizon.</span>
-        </div>
-        <div class="slider__social-links">
-          <a class="slider__link" href="#">Facebook</a>
-          <a class="slider__link" href="#">Twitter</a>
-          <a class="slider__link" href="#">Instagram</a>
-        </div>
-      </div>
-    </section>
     </div>
-    
+
     <main class="main">
       <section class="welcome-section">
         <div class="welcome-container">
@@ -69,18 +84,18 @@
           <div class="service">  
             <div class="service__item">
               <img src="./images/service-1.jpeg" class="service__photo">
-              <span class="service__heading">By the same illusion which lifts the horizon.</span>
+              <span class="service__heading">By the same illusion which lifts the horizon</span>
               <p class="service__description">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</p>
             </div>
             <div class="service__item">
-                <img src="./images/service-2.jpeg" class="service__photo">
-                <span class="service__heading">By the same illusion which lifts the horizon.</span>
-                <p class="service__description">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</p>  
+              <img src="./images/service-2.jpeg" class="service__photo">
+              <span class="service__heading">By the same illusion which lifts the horizon</span>
+              <p class="service__description">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</p>  
             </div>
             <div class="service__item3">
-                <img src="./images/service-3.jpeg" class="service__photo">
-                <span class="service__heading">By the same illusion which lifts the horizon.</span>
-                <p class="service__description">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</p>  
+              <img src="./images/service-3.jpeg" class="service__photo">
+              <span class="service__heading">By the same illusion which lifts the horizon</span>
+              <p class="service__description">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</p>  
             </div>
           </div>
         </div>
@@ -94,7 +109,7 @@
                 <img class="process__logo" src="./images/Vector-heading.png">
                 <h3 class="process__heading">Process</h3>
               </div>
-              <h2 class="process__headline">By the same illusion which lifts the horizon.</h2>
+              <h2 class="process__headline">By the same illusion which lifts the horizon</h2>
               <p class="process__text">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</p>
               <p class="process__text">The sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.</p>
             </div>
@@ -131,7 +146,7 @@
               <img class="features__logo" src="./images/Vector-white.png">
               <h3 class="features__heading">Features</h3>
             </div>
-            <h2 class="features__headline">By the same illusion which lifts the horizon.</h2>
+            <h2 class="features__headline">By the same illusion which lifts the horizon</h2>
             <div class="features__main">
               <div class="features__section-logo">
                 <img class="features__main-logo1" src="./images/Union.png">
@@ -154,9 +169,9 @@
           <div class="features__photo">
             <img src="./images/features.png">
           </div>
-          </div>
+        </div>
       </section>
-
+  
       <section class="testimonials-section">
         <div class="testimonials-container">
           <div class="testimonials">
@@ -164,7 +179,7 @@
               <img class="testimonials__logo" src="./images/Vector-heading.png">
               <h3 class="testimonials__heading">Testimonials</h3>
             </div>
-            <h2 class="testimonials__headline">By the same illusion which lifts the horizon.</h2>
+            <h2 class="testimonials__headline">By the same illusion which lifts the horizon</h2>
             <div class="testimonials__cards">
               <div class="testimonials__card">
                 <div class="testimonials__photo-container">
@@ -200,7 +215,7 @@
           </div>
         </div>
       </section>
-
+  
       <section class="info-section">
         <div class="info">
           <h2 class="info__head">Vision, Passion, Results</h2>
@@ -220,7 +235,7 @@
         <img class="info__clip11" src="./images/green-clip.png" alt="">
         <img class="info__clip12" src="./images/yellow-clip.png" alt="">
       </section>
-
+  
       <section class="message-section">
         <div class="message-container">
           <div class="message">
@@ -255,17 +270,19 @@
         </div>
       </section>
     </main>  
-
+  
     <footer class="footer">
-        <span class="footer__item">Design by @mariuszdaniel</span>
-        <nav class="footer__nav">
-          <a href="#" class="footer__link">Home</a>
-          <a href="#" class="footer__link">About us</a>
-          <a href="#" class="footer__link">Services</a>
-          <a href="#" class="footer__link">Work</a>
-          <a href="#" class="footer__link">Contact us</a>
-        </nav>
+      <span class="footer__item">Design by @mariuszdaniel</span>
+      <nav class="footer__nav">
+        <a href="#" class="footer__link">Home</a>
+        <a href="#" class="footer__link">About us</a>
+        <a href="#" class="footer__link">Services</a>
+        <a href="#" class="footer__link">Work</a>
+        <a href="#" class="footer__link">Contact us</a>
+      </nav>
     </footer>
   </div> 
+
+  <script> </script>
 </body>
 </html>
