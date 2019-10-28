@@ -5,16 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dia</title>
+  <link rel="stylesheet" href="./libraries/animate.css">
   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400,800,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
   <script src="./script.js" defer></script>
+  <script src="./libraries/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </head>
 <body>
   <div class="container">
     <div class="header-container">
       <header class="header">
-        <div class="header__navigation">
+        <div class="header__navigation wow fadeIn" data-wow-duration='1.5s'>
           <a href="#" class="header__logo-link">
             <img class="header__logo-img" src="./images/Dia.png">
           </a>
@@ -22,7 +27,7 @@
             <img src="./images/menu.png">
           </div> 
         </div>
-        <nav class="menu"> 
+        <nav class="menu wow fadeIn" data-wow-duration='1.5s'> 
           <div class="menu__links">
             <a href="#" class="menu__link">Home</a>
             <a href="#" class="menu__link">Services</a>
@@ -35,7 +40,7 @@
       
 
         <section class="header__section">
-          <div class="greet">
+          <div class="greet wow fadeInRight" data-wow-duration='1.5s'>
             <h1 class="greet__heading">Global digital agency</h1>
             <p class="greet__text">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath</p>
             <button class="greet__btn">Learn more</button>
@@ -67,7 +72,7 @@
 
     <main class="main">
       <section class="welcome-section">
-        <div class="welcome-container">
+        <div class="welcome-container wow slideInRight" data-wow-duration='2s'>
           <div class="welcome">
             <div class="welcome__head">
               <img class="welcome__logo" src="./images/Vector-heading.png">
@@ -79,7 +84,7 @@
       </section>
 
       <section class="service-section">
-        <div class="service-container">
+        <div class="service-container wow fadeInLeft" data-wow-duration='2s'>
           <h2 class="section__head">What we do</h2>
           <div class="service">  
             <div class="service__item">
@@ -103,7 +108,7 @@
 
       <section class="process-section">
         <div class="process-container">
-          <div class="process">
+          <div class="process wow fadeInRight" data-wow-duration='2s'>
             <div class="process__caption">
               <div class="process__head">
                 <img class="process__logo" src="./images/Vector-heading.png">
@@ -141,7 +146,7 @@
 
       <section class="features-section">
         <div class="features-container">
-          <div class="features">
+          <div class="features wow fadeInUp" data-wow-duration='2s'>
             <div class="features__head">
               <img class="features__logo" src="./images/Vector-white.png">
               <h3 class="features__heading">Features</h3>
@@ -174,14 +179,14 @@
   
       <section class="testimonials-section">
         <div class="testimonials-container">
-          <div class="testimonials">
+          <div class="testimonials wow fadeInRight" data-wow-duration='2s'>
             <div class="testimonials__head">
               <img class="testimonials__logo" src="./images/Vector-heading.png">
               <h3 class="testimonials__heading">Testimonials</h3>
             </div>
             <h2 class="testimonials__headline">By the same illusion which lifts the horizon</h2>
             <div class="testimonials__cards">
-              <div class="testimonials__card">
+              <div class="testimonials__card card1">
                 <div class="testimonials__photo-container">
                   <div class="testimonials__rectangle-1"></div>
                   <div class="testimonials__photo-1"></div>
@@ -191,7 +196,7 @@
                 <span class="testimonials__name">John Wayne</span>
                 <span class="testimonials__job-1">Ceo</span>
               </div>
-              <div class="testimonials__card">
+              <div class="testimonials__card card2">
                 <div class="testimonials__photo-container">
                   <div class="testimonials__rectangle-2"></div>
                   <div class="testimonials__photo-2"></div>
@@ -216,7 +221,7 @@
         </div>
       </section>
   
-      <section class="info-section">
+      <section class="info-section wow fadeIn" data-wow-duration='2.5s'>
         <div class="info">
           <h2 class="info__head">Vision, Passion, Results</h2>
           <p class="info__text">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath.</p>
@@ -237,7 +242,7 @@
       </section>
   
       <section class="message-section">
-        <div class="message-container">
+        <div class="message-container wow fadeInRight" data-wow-duration='2s'>
           <div class="message">
             <div class="message__head">
               <img class="message__logo" src="./images/Vector-heading.png">
@@ -271,7 +276,7 @@
       </section>
     </main>  
   
-    <footer class="footer">
+    <footer class="footer wow fadeIn" data-wow-duration='2s'>
       <span class="footer__item">Design by @mariuszdaniel</span>
       <nav class="footer__nav">
         <a href="#" class="footer__link">Home</a>

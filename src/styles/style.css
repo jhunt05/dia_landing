@@ -376,6 +376,7 @@ ol, ul {
   position: relative;
   overflow: hidden;
   margin-top: 50px;
+  z-index: -1;
 }
 
 .features {
@@ -490,7 +491,7 @@ ol, ul {
   box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.05);
   text-align: center;
   align-items: center;
-  transition: transform 1s;
+  transition: transform 1s, box-shadow 1s;
 }
 .testimonials__card:hover {
   transform: scale(1.1);
@@ -630,6 +631,21 @@ ol, ul {
   margin-top: 2px;
   color: #F25656;
 }
+.testimonials .card1:hover {
+  -webkit-box-shadow: 8px -1px 15px -2px rgba(86, 204, 242, 0.53);
+  -moz-box-shadow: 8px -1px 15px -2px rgba(86, 204, 242, 0.53);
+  box-shadow: 8px -1px 15px -2px rgba(86, 204, 242, 0.53);
+}
+.testimonials .card2:hover {
+  -webkit-box-shadow: 8px -1px 15px -2px #fcc304;
+  -moz-box-shadow: 8px -1px 15px -2px #fcc304;
+  box-shadow: 8px -1px 15px -2px #fcc304;
+}
+.testimonials .card3:hover {
+  -webkit-box-shadow: 8px -1px 15px -2px #f25656;
+  -moz-box-shadow: 8px -1px 15px -2px #f25656;
+  box-shadow: 8px -1px 15px -2px #f25656;
+}
 
 .info-section {
   margin-top: 70px;
@@ -671,6 +687,7 @@ ol, ul {
   cursor: pointer;
   border: none;
   outline: none;
+  transition: background 1s, color 1s, transform 1s;
 }
 .info__btn:focus {
   transform: scale(1.1);
@@ -745,6 +762,7 @@ ol, ul {
   font-weight: 500;
   font-size: 16px;
   border: none;
+  transition: background 1s, color 1s, transform 1s;
 }
 .message__btn:focus {
   transform: scale(1.1);

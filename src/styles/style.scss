@@ -422,6 +422,7 @@ $text-color: #253757;
   position: relative;
   overflow: hidden;
   margin-top: 50px;
+  z-index: -1;
 }
 
 .features {
@@ -529,7 +530,7 @@ $text-color: #253757;
     box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.05);
     text-align: center;
     align-items: center;
-    transition: transform 1s;
+    transition: transform 1s, box-shadow 1s;
 
     &:hover {
       transform: scale(1.1);
@@ -619,6 +620,24 @@ $text-color: #253757;
     @include testimonials-job();
     color: #F25656;
   }
+
+  .card1:hover {
+    -webkit-box-shadow: 8px -1px 15px -2px rgba(86,204,242,0.53);
+    -moz-box-shadow: 8px -1px 15px -2px rgba(86,204,242,0.53);
+    box-shadow: 8px -1px 15px -2px rgba(86,204,242,0.53);
+  }
+
+  .card2:hover {
+    -webkit-box-shadow: 8px -1px 15px -2px rgba(252,195,4,1);
+    -moz-box-shadow: 8px -1px 15px -2px rgba(252,195,4,1);
+    box-shadow: 8px -1px 15px -2px rgba(252,195,4,1);
+  }
+  
+  .card3:hover {
+    -webkit-box-shadow: 8px -1px 15px -2px rgba(242,86,86,1);
+    -moz-box-shadow: 8px -1px 15px -2px rgba(242,86,86,1);
+    box-shadow: 8px -1px 15px -2px rgba(242,86,86,1);
+  }
 }
 
 .info-section {
@@ -663,6 +682,7 @@ $text-color: #253757;
     cursor: pointer;
     border: none;
     outline: none;
+    transition: background 1s, color 1s, transform 1s;
 
     &:focus {
       transform: scale(1.1);
@@ -750,6 +770,7 @@ $text-color: #253757;
     font-weight: 500;
     font-size: 16px;
     border: none;
+    transition: background 1s, color 1s, transform 1s;
 
     &:focus {
       transform: scale(1.1);
