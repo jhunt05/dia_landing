@@ -838,6 +838,9 @@ ol, ul {
 .contacts__link:last-child {
   margin-right: 0;
 }
+.contacts__link:focus {
+  opacity: 0.5;
+}
 
 .footer {
   margin-top: 50px;

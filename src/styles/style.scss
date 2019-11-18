@@ -845,6 +845,10 @@ $text-color: #253757;
     &:last-child {
       margin-right: 0;
     }
+
+    &:focus {
+      opacity: 0.5;
+    }
   }
 }
 
