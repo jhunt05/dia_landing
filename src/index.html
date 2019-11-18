@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dia</title>
+  <link rel="stylesheet" href="./libraries/animate.css">
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="./script.js" defer></script>
+  <script src="./libraries/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="header-container">
+      <header id="home" class="header">
+        <div class="header__navigation wow fadeIn" data-wow-duration='1.5s'>
+          <a href="#" class="header__logo-link">
+            <img class="header__logo-img" src="./images/Dia.png">
+          </a>
+          <div class="menu__icon" onclick='openMenu()'>
+            <img src="./images/menu.png">
+          </div> 
+        </div>
+        <nav class="menu wow fadeIn" data-wow-duration='1.5s'> 
+          <div class="menu__links">
+            <a href="#home" class="menu__link">Home</a>
+            <a href="#service" class="menu__link">Services</a>
+            <a href="#about" class="menu__link">About us</a>
+            <a href="#work" class="menu__link">Work</a>
+            <a href="#contacts" class="menu__link">Contact us</a>
+            <a href="#" class="menu__link">Hire us</a>
+          </div>
+        </nav>
+      
+
+        <section class="header__section">
+          <div class="greet wow fadeInRight" data-wow-duration='1.5s'>
+            <h1 class="greet__heading">Global digital agency</h1>
+            <p class="greet__text">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath</p>
+            <button class="greet__btn">Learn more</button>
+          </div>
+        </section>
+      </header>
+
+      <section class="slider-section">
+        <div class="slider">
+          <div class="slider__photo">
+            <img class="slide showed" src="./images/slider-photo/photo.jpeg" alt="">
+            <img class="slide" src="./images/slider-photo/photo-2.jpg" alt="">
+            <img class="slide" src="./images/slider-photo/photo-3.jpg" alt="">
+          </div>
+          <button class="slider__btn slider__btn-1" onclick="previousPhoto()"><img src="./images/Vector-left.png"></button>
+          <button class="slider__btn slider__btn-2" onclick="nextPhoto()"><img src="./images/Vector.png"></button>
+          <div class="slider__intro">
+            <span class="slider__intro-heading">Intro</span>
+            <span class="slider__intro-text">By the same illusion which lifts the horizon</span>
+          </div>
+          <div class="slider__social-links">
+            <a class="slider__link" href="#">Facebook</a>
+            <a class="slider__link" href="#">Twitter</a>
+            <a class="slider__link" href="#">Instagram</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <main class="main">
+      <section class="welcome-section">
+        <div class="welcome-container wow slideInRight" data-wow-duration='2s'>
+          <div class="welcome">
+            <div class="welcome__head">
+              <img class="welcome__logo" src="./images/Vector-heading.png">
+              <h3 class="welcome__heading">Welcome</h3>
+            </div>
+            <p class="welcome__text">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="service"class="service-section">
+        <div class="service-container wow fadeInLeft" data-wow-duration='2s'>
+          <h2 class="section__head">What we do</h2>
+          <div class="service">  
+            <div class="service__item">
+              <img src="./images/service-1.jpeg" class="service__photo">
+              <span class="service__heading">By the same illusion which lifts the horizon</span>
+              <p class="service__description">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</p>
+            </div>
+            <div class="service__item">
+              <img src="./images/service-2.jpeg" class="service__photo">
+              <span class="service__heading">By the same illusion which lifts the horizon</span>
+              <p class="service__description">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</p>  
+            </div>
+            <div class="service__item3">
+              <img src="./images/service-3.jpeg" class="service__photo">
+              <span class="service__heading">By the same illusion which lifts the horizon</span>
+              <p class="service__description">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</p>  
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="process-section">
+        <div class="process-container">
+          <div class="process wow fadeInRight" data-wow-duration='2s'>
+            <div class="process__caption">
+              <div class="process__head">
+                <img class="process__logo" src="./images/Vector-heading.png">
+                <h3 class="process__heading">Process</h3>
+              </div>
+              <h2 class="process__headline">By the same illusion which lifts the horizon</h2>
+              <p class="process__text">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</p>
+              <p class="process__text">The sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.</p>
+            </div>
+            <div class="process__point-items">
+              <div class="process__point-item1">
+                <img class="process__point-eclipse" src="./images/Ellipse-1.png">
+                <span class="process__point-number1">1</span>
+                <span class="process__point-text">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</span>
+              </div>
+              <div class="process__point-item2">
+                <img class="process__point-eclipse" src="./images/Ellipse-2.png">
+                <span class="process__point-number2">2</span>
+                <span class="process__point-text">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</span>
+              </div>
+              <div class="process__point-item3">
+                <img class="process__point-eclipse" src="./images/Ellipse-3.png">
+                <span class="process__point-number3">3</span>
+                <span class="process__point-text">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</span> 
+              </div>
+              <div class="process__point-item4">
+                <img class="process__point-eclipse" src="./images/Ellipse-4.png">
+                <span class="process__point-number4">4</span>
+                <span class="process__point-text">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="features-section">
+        <div class="features-container">
+          <div class="features wow fadeInUp" data-wow-duration='2s'>
+            <div class="features__head">
+              <img class="features__logo" src="./images/Vector-white.png">
+              <h3 class="features__heading">Features</h3>
+            </div>
+            <h2 class="features__headline">By the same illusion which lifts the horizon</h2>
+            <div class="features__main">
+              <div class="features__section-logo">
+                <img class="features__main-logo1" src="./images/Union.png">
+              </div>
+              <p class="features__text">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out.</p>
+            </div>
+            <div class="features__main">
+              <div class="features__section-logo">
+                <img class="features__main-logo2" src="./images/calendar.png">
+              </div>
+              <p class="features__text">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out.</p>
+            </div>
+            <div class="features__main">
+              <div class="features__section-logo">
+                <img class="features__main-logo3" src="./images/file-text.png">
+              </div>
+              <p class="features__text">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out.</p>
+            </div>
+          </div>
+          <div class="features__photo">
+            <img src="./images/features.png">
+          </div>
+        </div>
+      </section>
+  
+      <section class="testimonials-section">
+        <div class="testimonials-container">
+          <div class="testimonials wow fadeInRight" data-wow-duration='2s'>
+            <div class="testimonials__head">
+              <img class="testimonials__logo" src="./images/Vector-heading.png">
+              <h3 class="testimonials__heading">Testimonials</h3>
+            </div>
+            <h2 class="testimonials__headline">By the same illusion which lifts the horizon</h2>
+            <div class="testimonials__cards">
+              <div class="testimonials__card card1">
+                <div class="testimonials__photo-container">
+                  <div class="testimonials__rectangle-1"></div>
+                  <div class="testimonials__photo-1"></div>
+                </div>
+                <p class="testimonials__text">“By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.”</p>
+                <hr class="testimonials__blue-line">
+                <span class="testimonials__name">John Wayne</span>
+                <span class="testimonials__job-1">Ceo</span>
+              </div>
+              <div class="testimonials__card card2">
+                <div class="testimonials__photo-container">
+                  <div class="testimonials__rectangle-2"></div>
+                  <div class="testimonials__photo-2"></div>
+                </div>
+                <p class="testimonials__text">“By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.”</p>
+                <hr class="testimonials__yellow-line">
+                <span class="testimonials__name">John Wayne</span>
+                <span class="testimonials__job-2">Ceo</span>
+              </div>
+              <div class="testimonials__card card3">
+                <div class="testimonials__photo-container">
+                  <div class="testimonials__rectangle-3"></div>
+                  <div class="testimonials__photo-3"></div>   
+                </div>           
+                <p class="testimonials__text">“By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.”</p>
+                <hr class="testimonials__red-line">
+                <span class="testimonials__name">John Wayne</span>
+                <span class="testimonials__job-3">Ceo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="info-section wow fadeIn" data-wow-duration='2.5s'>
+        <div class="info">
+          <h2 class="info__head">Vision, Passion, Results</h2>
+          <p class="info__text">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath.</p>
+          <button class="info__btn">Apply</button>
+        </div>
+        <img class="info__clip1" src="./images/yellow-clip.png" alt="">
+        <img class="info__clip2" src="./images/yellow-clip.png" alt="">
+        <img class="info__clip3" src="./images/purple-clip.png" alt="">
+        <img class="info__clip4" src="./images/purple-clip.png" alt="">
+        <img class="info__clip5" src="./images/purple-clip.png" alt="">
+        <img class="info__clip6" src="./images/blue-clip.png" alt="">
+        <img class="info__clip7" src="./images/blue-clip.png" alt="">
+        <img class="info__clip8" src="./images/red-clip.png" alt="">
+        <img class="info__clip9" src="./images/red-clip.png" alt="">
+        <img class="info__clip10" src="./images/green-clip.png" alt="">
+        <img class="info__clip11" src="./images/green-clip.png" alt="">
+        <img class="info__clip12" src="./images/yellow-clip.png" alt="">
+      </section>
+  
+      <section id="contacts" class="message-section">
+        <div class="message-container wow fadeInRight" data-wow-duration='2s'>
+          <div class="message">
+            <div class="message__head">
+              <img class="message__logo" src="./images/Vector-heading.png">
+              <h3 class="message__heading">Send us a message</h3>
+            </div>
+            <form class="message__form">
+              <input class="message__inputs" type="email" name="email" placeholder="Your email">
+              <input class="message__inputs" type="text" name="name" placeholder="Your name">
+              <input class="message__inputs" type="text" name="message" placeholder="Your message">
+              <button class="message__btn">Send</button>
+            </form>
+          </div>
+          <div class="contacts">
+            <div class="contacts__head">
+              <img class="contacts__logo" src="./images/Vector-heading.png">
+              <h3 class="contacts__heading">Contact us</h3>
+            </div>
+            <h2 class="contacts__text">By the same illusion which lifts the horizon.</h2>
+            <span class="contacts__small-head">Call us</span>
+            <span class="contacts__items">654 321 987</span>
+            <span class="contacts__small-head">Visit us</span>
+            <span class="contacts__items">2905 West Drive,<br>
+              Buffalo Grove</span>
+            <div class="contacts__social-links">
+              <a class="contacts__link" href="#"><img src="./images/twitter.png" alt=""></a>
+              <a class="contacts__link" href="#"><img src="./images/instagram.png" alt=""></a>
+              <a class="contacts__link" href="#"><img src="./images/facebook.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>  
+  
+    <footer class="footer wow fadeIn" data-wow-duration='2s'>
+      <span class="footer__item">Design by @mariuszdaniel</span>
+      <nav class="footer__nav">
+        <a href="#" class="footer__link">Home</a>
+        <a href="#" class="footer__link">About us</a>
+        <a href="#" class="footer__link">Services</a>
+        <a href="#" class="footer__link">Work</a>
+        <a href="#" class="footer__link">Contact us</a>
+      </nav>
+    </footer>
+  </div> 
+
+  <script> </script>
+</body>
+</html>
